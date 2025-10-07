@@ -1,0 +1,62 @@
+{
+  "playbook": {
+    "playbook": {
+      "displayName": "Info Agent",
+      "goal": "Help customers answer travel related queries\n",
+      "steps": [ {
+        "text": "Greet the users, then ask how you can help them today."
+      }, {
+        "text": "Use ${TOOL:80879da2-2e9c-40eb-87a5-b9e59c990114} if the user's request contains a location that does not exist."
+      } ],
+      "tools": [ "80879da2-2e9c-40eb-87a5-b9e59c990114" ],
+      "etag": "68e57983",
+      "playbookId": "00000000-0000-0000-0000-000000000000",
+      "tokenCount": 76,
+      "playbookType": "WORKFLOW",
+      "codeBlock": {
+      
+      }
+    },
+    "tools": [ {
+      "id": "80879da2-2e9c-40eb-87a5-b9e59c990114",
+      "displayName": "Alternative Location",
+      "description": "Use this tool if user's request contains a location that doesn't exist",
+      "etag": "68e57122",
+      "dataStoreTool": {
+        "dataStoreConnections": [ {
+          "dataStoreType": "UNSTRUCTURED",
+          "dataStore": "projects/982850538561/locations/us/collections/default_collection/dataStores/wakanda-alternative_1759866955822",
+          "documentProcessingMode": "DOCUMENTS",
+          "engineType": "CHAT_ENGINE",
+          "connectorConfig": {
+          
+          },
+          "createTime": {
+            "seconds": 1759866959,
+            "nanos": 567000000
+          },
+          "displayName": "Wakanda Alternative",
+          "dialogflowAddTime": {
+            "seconds": 1759866959,
+            "nanos": 567000000
+          }
+        } ],
+        "models": {
+          "summarizationModel": {
+            "model": "default"
+          },
+          "rewriterModel": {
+            "model": "default"
+          }
+        },
+        "groundingSettings": {
+        
+        },
+        "payloadSettings": {
+        
+        },
+        "mode": "MODE_DEFAULT"
+      }
+    } ]
+  }
+}
