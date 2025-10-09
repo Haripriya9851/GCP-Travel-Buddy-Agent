@@ -1,4 +1,4 @@
-# GCP-Travel-Buddy-Agent
+# Conversation Travel Buddy Agent
 Travel Agent App With GCP VertexAI Agent Builder and GCP Cloud Run 
 
 ## STEP-1: Created "TRAVEL INFO AGENT WITH DATASTORE" Using GCP VertexAI Agent Builder
